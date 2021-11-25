@@ -1,5 +1,5 @@
 {% set name = "superqt" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.5.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 580278f077048d86e10960073e62345a8b479bf0f030097a1d63205c9f0d4f8d
+  sha256: e1b2d7e224231932ad31c23afcc8fd5dbf7c56fea914681028e9a255ae6eeb0d
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.7
-    - typing-extensions
+    - typing-extensions >=3.10.0.0
 
 test:
   imports:
