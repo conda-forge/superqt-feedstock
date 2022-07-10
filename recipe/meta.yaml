@@ -23,6 +23,7 @@ requirements:
     - pip
     - setuptools_scm
   run:
+    - pygments >=2.4.0
     - python >=3.7
     - qtpy
     - typing-extensions >=3.10.0.0
