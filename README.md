@@ -1,7 +1,7 @@
 About superqt
 =============
 
-Home: https://github.com/napari/superqt
+Home: https://github.com/pyapp-kit/superqt
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/superqt-feedsto
 
 Summary: Missing widgets and components for PyQt/PySide
 
-Development: https://github.com/napari/superqt
+Development: https://github.com/pyapp-kit/superqt
 
 Superqt aims to provide high-quality community-contributed Qt widgets
 and components for PyQt & PySide that are not provided in the native
