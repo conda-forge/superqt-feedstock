@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - packaging
-    - pygments>=2.4.0
+    - pygments >=2.4.0
     - python >=3.7
-    - qtpy>=1.1.0
+    - qtpy >=1.1.0
     - typing-extensions
 
 test:
