@@ -16,17 +16,16 @@ build:
 
 requirements:
   build:
-    - pep517
-    - setuptools_scm
-  host:
+    - hatch
+    - hatch-vcs
     - python >=3.7
     - pip
-    - setuptools_scm
   run:
-    - pygments >=2.4.0
+    - packaging
+    - pygments>=2.4.0
     - python >=3.7
-    - qtpy
-    - typing-extensions >=3.10.0.0
+    - qtpy>=1.1.0
+    - typing-extensions
 
 test:
   imports:
@@ -38,7 +37,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/napari/superqt
+  home: https://github.com/pyapp-kit/superqt
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -48,7 +47,7 @@ about:
     and components for PyQt & PySide that are not provided in the native
     QtWidgets module, such as range sliders, float sliders, and other 
     extended widgets.
-  dev_url: https://github.com/napari/superqt
+  dev_url: https://github.com/pyapp-kit/superqt
 
 extra:
   recipe-maintainers:
