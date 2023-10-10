@@ -19,13 +19,13 @@ requirements:
     - hatch
     - hatch-vcs
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - packaging
+    - pyconify >=0.1.4
     - pygments >=2.4.0
-    - python >=3.7
+    - python >=3.8
     - qtpy >=1.1.0
-    - typing-extensions
+    - typing_extensions
 
 test:
   imports:
