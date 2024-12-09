@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: af80d5687ec75df6c3e54119ee895e42f79742ed326684c79425414b5c20f1e3
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,11 +19,11 @@ requirements:
     - hatch
     - hatch-vcs
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - pyconify >=0.1.4
     - pygments >=2.4.0
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy >=1.1.0
     - typing_extensions
 
@@ -33,6 +33,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
   commands:
     - pip list
     - pip check
