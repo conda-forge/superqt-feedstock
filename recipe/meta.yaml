@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - hatch
+    - hatchling
     - hatch-vcs
     - pip
     - python {{ python_min }}
