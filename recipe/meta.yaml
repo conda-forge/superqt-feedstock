@@ -25,14 +25,14 @@ requirements:
     - pygments >=2.4.0
     - python >={{ python_min }}
     - qtpy >=1.1.0
-    - typing_extensions
+    - typing_extensions >=3.7.4.3
 
 test:
   imports:
     - superqt
   requires:
     - pip
-    - pyqt
+    - pyqt6
     - python {{ python_min }}
   commands:
     - pip list
@@ -55,5 +55,4 @@ extra:
   recipe-maintainers:
     - goanpeca
     - jni
-    - sofroniewn
     - tlambert03
