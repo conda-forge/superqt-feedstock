@@ -32,7 +32,7 @@ test:
     - superqt
   requires:
     - pip
-    - pyqt6
+    - pyqt
     - python {{ python_min }}
   commands:
     - pip list
