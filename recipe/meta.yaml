@@ -1,5 +1,5 @@
 {% set name = "superqt" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14f617a46b1056783a5e32fd384038c4a62bcd320f9cd1e12cfb7d77fd8caa2c
+  sha256: a8b74e33f7cd3f99210e0569050e738a60c5c6f55ed98623deca504e5b28e690
 
 build:
   noarch: python
