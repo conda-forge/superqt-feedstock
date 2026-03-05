@@ -24,8 +24,8 @@ requirements:
     - pyconify >=0.1.4
     - pygments >=2.4.0
     - python >={{ python_min }}
-    - qtpy >=1.1.0
-    - typing_extensions >=3.7.4.3
+    - qtpy >=2.4.0
+    - typing_extensions >=4.5.0
 
 test:
   imports:
